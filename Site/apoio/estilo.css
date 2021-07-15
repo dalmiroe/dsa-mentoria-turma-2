@@ -1,0 +1,229 @@
+/*@import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');*/
+*, *:before , *:after {
+            margin:0;
+            padding:0;
+
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1em; /* igual a 16px*/
+            font-weight:400;
+
+            line-height:1.2;
+            letter-spacing:0em;
+
+            box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+        }
+
+body {
+      min-height: 2000px;
+      padding-top: 102px;
+      background-color: #dff79e;
+}
+/*Geral*/
+.fonteZero{font-size:0;}
+.h1Zero{margin: 0px;font-size:0;}
+.imgNoCentro {display: inline-block;padding-top: 25%;}
+.bgVinho{background:#660033;color: #FFC90E;}
+/*Menu*/
+.cabecalho {
+      background-color:rgba(255,255,255,0.5);
+      background-image:url(flogo.jpg);
+      background-size:cover;
+      padding-left:2%;
+      color:#fff;
+}
+.textoLogo1 {
+      font-weight:bold;
+      font-size:3.2em;
+      text-shadow: 2px 2px 6px #000000;
+      color:#fff !important;
+}
+.textoLogo2{
+      font-weight:bold;
+      font-size:1.2em;
+      margin-top:20px;
+}
+
+.menu a {
+      color:#fff !important;
+      text-transform:uppercase;
+      font-weight:bold;
+      font-size:0.9em;
+      padding-top: 45px !important;
+}
+.menu a:hover {color:rgb(216, 250, 65) !important;font-size:1.0em;}
+
+
+@media(max-width:768px){
+      .textoLogo1 {
+            font-weight:bold;
+            font-size:1.7em;
+            text-shadow: 2px 2px 6px #000000;
+            color:#fff !important;
+      }
+      .menu a {padding-top: 0px !important;padding-bottom: : 0px !important; }
+}
+.newsletter{
+    text-align: left;
+    vertical-align:middle !important;
+    background-color: #f7f7f7
+}
+/*Destaque*/
+.destaque {
+      background-image: url(fj1x.jpg);
+      background-size:cover;
+      background-attachment:fixed;
+      background-position: center top;
+      color:#fff;
+      margin-bottom: 10px;
+}
+.destaque header  h1{
+      font-weight:800;
+      font-size:2.5em;
+      margin-top:10%;
+}
+.destaque .tagline {
+      margin:35px 0;
+      font-size:1.5em;
+      background: rgba(0, 0, 0,.3);
+      padding:15px;
+
+}
+/*Avisos*/
+ .aviso{padding-top: 10px;}
+ .aviso .jumbotron{background-color: #f4ffd6;}
+/*tabelas*/
+tr.corona td {
+  background-color: red !important;
+  }
+th, td {
+  text-align: center;
+  vertical-align:middle !important;
+  /*border: 1px solid #000;
+  border-collapse: collapse;*/
+   background-color: #eee;
+  }
+th{background-color: rgb(216,241,36); }
+td {text-transform: capitalize !important;}
+table > caption {
+  padding: 0.3em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th
+{
+    background-color: rgb(236,234,193);
+}
+.table-hover tr:hover td{
+   background-color: #fff !important;
+   cursor:pointer;
+   font-weight: bold;
+}
+
+.rosto{
+    border: 1px solid rgb(216,241,36);
+    border-radius: 50%;
+
+}
+
+.atividade{color:#fff;background-color:  #7fa643;
+      margin-bottom: 5px;
+}
+.atividade h3{font-size: 1.5em;font-weight: bold;}
+.atividade li {font-size: 1.2em;}
+
+.projetos{text-align: center;}
+.projetos p{font-size: 1.2em;}
+.projetos .container-fluid {margin:auto -30px;}
+.projetos .corFundo1{background-color: #f7f7f7;}
+.projetos .corFundo2{background-color: #dfe3ee;}
+.projetos-item p,li{font-weight: 400; font-size: 1.3em;text-align: left;}
+.projetos-item li{margin-left: 10%;}
+
+section header{padding-bottom: 3%;}
+
+.cab2 {
+            background: linear-gradient(to bottom right, #d2df6a, rgba(0,0,0,0));
+            text-align:center;
+      }
+/*footer*/
+footer{
+      height: 35%;
+      background-color: #314b29;
+      color:#fff;
+}
+.mapa {padding-top: 20px;}
+footer form {display: none;}
+
+.banner {
+    background: url('Niver.jpg') 0 0 repeat;
+    -webkit-animation: animate_background 10s linear 0s infinite;
+    -moz-animation: animate_background 10s linear 0s infinite;
+    -o-animation: animate_background 10s linear 0s infinite;
+    animation: animate_background 10s linear 0s infinite;
+    font-size:3.5em !important;
+
+}
+
+/* Carousel base class */
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto;
+      width: 100%;
+      height: 500px;
+  }
+
+.carousel-caption {
+    text-align: center;color: #fff;background: rgba(0, 0, 0,.5);
+    max-width: 100%;
+    width:100%;
+    left: 0;
+
+}
+.carousel-caption h1{font-size: 1.8em; color: #fff}
+.carousel-caption .lead {font-size: 1.3em;}
+.carousel-caption .obs {font-size: 0.9em;}
+
+
+@-webkit-keyframes animate_background {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -200px;
+    }
+}
+@-moz-keyframes animate_background {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -200px;
+    }
+}
+@-o-keyframes animate_background {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -200px;
+    }
+}
+@keyframes animate_background {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -200px;
+    }
+}
+.banner p{font-family: Dosis, Helvetica, Arial, sans-serif; font-size: 2.2em;font-weight: bold;color:#fff;text-shadow: 2px 2px 6px #000000;}
+.banner h2{font-family: Dosis, Helvetica, Arial, sans-serif;font-size: 3.0em;color:#fff;text-shadow: 2px 2px 6px #000000;text-align: center;}
+
+.esconde {
+    display:none;
+}
+/* Último ajuste 01/03/2020*/
