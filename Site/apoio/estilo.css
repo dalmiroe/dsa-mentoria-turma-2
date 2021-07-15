@@ -18,20 +18,23 @@
 body {
       min-height: 2000px;
       padding-top: 102px;
-      background-color: #dff79e;
+      background-color: #c8e3f3;
 }
 /*Geral*/
 .fonteZero{font-size:0;}
 .h1Zero{margin: 0px;font-size:0;}
 .imgNoCentro {display: inline-block;padding-top: 25%;}
 .bgVinho{background:#660033;color: #FFC90E;}
+
 /*Menu*/
 .cabecalho {
       background-color:rgba(255,255,255,0.5);
-      background-image:url(flogo.jpg);
+      background-image:url(bg1.jpg);
       background-size:cover;
       padding-left:2%;
       color:#fff;
+      margin: 0 auto;
+
 }
 .textoLogo1 {
       font-weight:bold;
@@ -92,11 +95,9 @@ body {
 }
 /*Avisos*/
  .aviso{padding-top: 10px;}
- .aviso .jumbotron{background-color: #f4ffd6;}
+ .aviso .jumbotron{background-color: #8ea5d1;}
+ /*.aviso .jumbotron{background-color: #f4ffd6;}*/
 /*tabelas*/
-tr.corona td {
-  background-color: red !important;
-  }
 th, td {
   text-align: center;
   vertical-align:middle !important;
@@ -104,7 +105,8 @@ th, td {
   border-collapse: collapse;*/
    background-color: #eee;
   }
-th{background-color: rgb(216,241,36); }
+th{background-color: rgb(193, 196, 248); }
+/*th{background-color: rgb(216,241,36); }*/
 td {text-transform: capitalize !important;}
 table > caption {
   padding: 0.3em;
@@ -128,7 +130,7 @@ table > caption {
 
 }
 
-.atividade{color:#fff;background-color:  #7fa643;
+.atividade{color:#fff;background-color:  #79b9ee;
       margin-bottom: 5px;
 }
 .atividade h3{font-size: 1.5em;font-weight: bold;}
@@ -145,13 +147,13 @@ table > caption {
 section header{padding-bottom: 3%;}
 
 .cab2 {
-            background: linear-gradient(to bottom right, #d2df6a, rgba(0,0,0,0));
+            background: linear-gradient(to bottom right, #6a9ddf, rgba(0,0,0,0));
             text-align:center;
       }
 /*footer*/
 footer{
       height: 35%;
-      background-color: #314b29;
+      background-color: #023f5c;
       color:#fff;
 }
 .mapa {padding-top: 20px;}
