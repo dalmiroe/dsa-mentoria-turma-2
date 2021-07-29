@@ -1,185 +1,433 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
 
-  		<meta charset="utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  		<meta name="description" content="MDados" />
-  		<meta name=viewport content="width=device-width, initial-scale=1"/>
-      <link rel="shortcut icon" href="apoio/MiniMdados.png">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600,800' rel='stylesheet' type='text/css'>
-      <link href="//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suggeri - Sistema de recomendação</title>
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Custom stylesheet -->
+</head>
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
-      <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-
-      <!-- Bootstrap core CSS -->
-      <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-      <!-- Custom styles for this template -->
-      <link href="navbar-fixed-top.css" rel="stylesheet">
-
-      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-      <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-		  <link href="apoio/estilo.css" rel="stylesheet" >
-		  <title>MDados</title>
-	</head>
-
-  <body>
-    <!-- cabeçalho -->
-    <header id="m-inicio">
-      <h1 class="h1Zero">MDados</h1>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <h1 class="h1Zero">Menu</h1>
-        <div class="container-fluid cabecalho">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#"> <img class="img-responsive" src="apoio/Mdados.png" title="Logotipo MDados" alt ="Logotipo MDados"/></a>
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!-- Site Header -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader.gif" alt="preloader">
+   </div>
+   </div>    -->
+    <!--Site Header Area -->
+    <header class="site-header site-header--menu-right landing-14-menu site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="#">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo.png" alt="" class="light-version-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo.png" alt="" class="dark-version-logo">
+            </a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse menu">
-            <ul class="nav navbar-nav navbar-right vaiLink">
-
-              <li><a href="#m-inicio">Empresa</a></li>
-              <li><a href="#m-contato">Contato</a></li>
-              <li><a href="#m-solucoes">Soluções</a></li>
-            </ul>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Área do Cliente <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-9">
+                    <li class="sub-menu--item">
+                      <a href="#">Envio de base de dados</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="#">Experimente!!</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#m-funciona" class="nav-link-item">Como Funciona</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#m-contato" class="nav-link-item">Contato</a>
+                </li>
+              </ul>
+            </nav>
           </div>
 
-        </div>
-      </nav>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
     </header>
-    <main class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 aviso">
-          <article class="jumbotron">
-            <h2>A MDados é uma empresa que....</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium debitis nostrum laboriosam doloribus atque animi officia molestiae amet, reprehenderit nulla voluptates, recusandae a modi? Ea aut alias error dolores veritatis.
-            </p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aperiam, laudantium veniam dolores quos consequuntur dignissimos facere nesciunt, doloremque exercitationem perferendis mollitia! Alias sint aut harum dolores laboriosam? Quo, iusto!</p>
-            <h2>Nossa História....</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repudiandae itaque voluptates illum et ex repellendus unde cumque corrupti! Alias aliquam reiciendis sint! Obcaecati magnam provident distinctio qui, rem quaerat!</p>
-            <h2>Nossa Equipe....</h2>
-          </article>
+    <!-- navbar- -->
+    <!-- Hero Area -->
+    <div class="hero-area-l-14 position-relative z-index-1 overflow-hidden">
+      <div class="container">
+        <div class="row position-relative justify-content-center">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 pr-0 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content">
+              <h1>Obtenha mais clientes</h1>
+              <p>Estamos trazendo uma ferramenta de recomendação de produto com base no que realmente os seus consumidores compram. Diga adeus às recomendações genéricas e segmentação teórica. No nosso sistema, você simplesmente carrega uma base de dados das vendas reais de sua própria empresa e automaticamente treinamos um modelo de Machine Learning especial para sua empresa. Desta forma, as recomendações de produtos serão muito mais efetivas e relevantes. Se adiquirir a versão PRO AUTO, o algoritmo melhora ainda mais a sua performance à cada clique, pesquisa de produtos e compra dos usuários no seu site. E então, vamos fazer o upgrade do seu site para incorporar Inteligência Artificial e sugerir produtos com mais possibilidade de venda para seus cliente de forma fácil e rápida?</p>
+              <!--<a href="#" class="btn focus-reset">Start my free trial</a>-->
+            </div>
+          </div>
+          <div class="col-xl-7 col-lg-5 col-md-8 " data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="banner-image-l-14">
+              <img src="./image/l4/hero-img.png" alt="" class="w-100 mt-xl-n10">
+            </div>
+          </div>
         </div>
       </div>
-      <section id="m-solucoes" class="container-fluid projetos">
-          <header>
-              <h1 class="textoLogo1 cab2">Nossas soluções</h1>
-          </header>
-          <article class="row vaiLink">
-            <div class="col-lg-4">
-              <img class="img-circle" src="apoio/recomendacao.jpg" alt="Imagem ilustrativa" width="200" height="200">
-              <h2>Suggeri</h2>
-              <p>Sistema de recomendação de produtos</p>
-              <p><a class="btn btn-primary" href="#m-detalheSuggeri" role="button">Veja mais detalhes &raquo;</a></p>
+      <div class="bg-shape-14"></div>
+    </div>
+    <!-- Brand-area -->
+    <div class="brand-area-l-14">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h4>Nossos clientes</h4>
+          </div>
+        </div>
+        <div class="row img-grayscale">
+          <div class="col-lg-12">
+            <div class="brand-area-l-14-items d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap ">
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                <img src="image/l4/brand-logo.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+                <img src="image/l4/brand-logo-1.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="900" data-aos-once="true">
+                <img src="image/l4/brand-logo-2.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                <img src="image/l4/brand-logo-3.svg" alt="">
+              </div>
+              <div class="single-brand " data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                <img src="image/l4/brand-logo-4.svg" alt="">
+              </div>
             </div>
-            <div class="col-lg-4">
-              <img class="img-circle" src="apoio/bigdata.jpg" alt="Imagem ilustrativa" width="200" height="200">
-              <h2>Big Data Self-service</h2>
-              <p>Atender as necessidade do cliente sob demanda.</p>
-              <p><a class="btn btn-primary" href="#m-detalheBigData" role="button">Veja mais detalhes &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-              <img class="img-circle" src="apoio/Infra.png" alt="Imagem ilustrativa" width="200" height="200">
-              <h2>Infraestrutura</h2>
-              <p>Controle da sua infraestrutura</p>
-              <p><a class="btn btn-primary" href="#m-detalheInfra" role="button">Veja mais detalhes &raquo;</a></p>
-            </div>
-        </article>
-        <div class="container-fluid corFundo1">
-          <article class="row projetos-item">
-            <div class="col-md-12">
-              <h2 id="m-detalheSuggeri" class="textoLogo1">Solução Suggeri</h2>
-              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate maxime laborum asperiores dolores non. Dicta sit pariatur aliquid assumenda recusandae, ipsa eum cumque maxime dolorem quos modi fugit? Doloremque, eligendi.. <br><br>
-              <span class="bg-danger">Experimente gratuitamente! </span><br><br>
-              </p>
-
-              <p>
-              <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam cum voluptates nihil at ullam est, adipisci numquam:</strong><br>
-            </div>
-
-          </article>
-
-          <article class="row projetos-item corFundo2">
-            <div class="col-md-7 col-md-push-5">
-              <h2 id="m-detalheBigData" class="textoLogo1">Big Data Self-service</h2>
-              <p class="lead"><strong>Para o cliente que:</strong><br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati et molestiae, illum autem earum debitis reiciendis, accusamus quidem hic magnam voluptate tenetur corrupti aliquid asperiores assumenda beatae? Tempora, voluptatibus quaerat.. <br><br>
-
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="img-thumbnail img-responsive" src="apoio/BDservico.jpg" alt="Imagem do item"  width="500" height="700">
-            </div>
-          </article>
-
-          <article class="row projetos-item">
-            <div class="col-md-7">
-              <h2 id="m-detalheInfra" class="textoLogo1">Infraestrutura</h2>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quod saepe eum fugiat numquam deserunt ad? Esse, dicta ducimus sed incidunt soluta beatae ut nisi itaque molestiae corrupti in quis!<br><br>
-            </div>
-            <div class="col-md-5">
-              <img class="img-thumbnail img-responsive center-block" src="apoio/infraestrutura.png" alt="Imagem do item" width="500" height="800">
-            </div>
-      </div>
-
-      </section>
-
-    </main>
-
-    <footer id="m-contato" class="container-fluid">
-      <h2 class="textoLogo1 cab2">Contato</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Endereço</h2>
-          <address>
-            <strong>Av. Paulista, 104</strong><br>
-            São Paulo - SP<br>
-            Cep:00000-000<br>
-            Tel:(011) 99999-99999<br>
-            Email: contato@mdados.com.br
-          </address>
+          </div>
+        </div>
+        <div id="m-funciona"  class="row">
+          <div class="col-lg-12">
+            <div class="brand-aarea-border-l14"></div>
+          </div>
         </div>
       </div>
-
-
-      <hr>
-      <p class="text-center">&copy Copyright 2021<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> - MDados. Todos os direitos reservados.</p>
+    </div>
+    <!-- Content-Area-1 -->
+    <div class="content-area-l-14-1 position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+            <div class="h-100 section-heading-8 content text-lg-start text-center">
+              <h2>Como funciona</h2>
+              <p>- O algoritmo recebe uma base de vendas e treina um algoritmo de ML.<br>
+                - Os modelos treinados para cada cliente são disponibilizados através de uma API.<br>
+                - O site dos clientes utiliza a API para consultar os produtos com mais possibilidade de venda para aquele cliente específico.<br>
+                - O site exibe a lista de produtos sugeridos pela API.</p>
+            </div>
+          </div>
+          <div class="offset-xl-2 col-xl-6 col-lg-6 col-md-8 pl-xl-11 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+            <div class="content-img">
+              <img src="image/l4/content-img-1.png" alt="" class="w-100 w-xl-auto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content-Area-2 -->
+    <div class="content-area-l-14-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-8" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img pr-lg-13">
+              <img src="image/l4/content-img-2.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-4 offset-xl-2 col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content section-heading-8 text-lg-start text-center">
+              <h2>
+                Experimente!!!
+              </h2>
+              <P>Experimente o melhor mecanismo de recomendação do planeta gratuitamente por 30 dias.</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Area -->
+    <div class="features-area-l-14">
+      <div class="container bg-shape-img-2 position-relative">
+        <div class="row features-area-l-14 justify-content-center mx-0">
+          <div class="col-lg-6 col-md-8 col-sm-10 px-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex">
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-1.png" alt="">
+              </div>
+              <div class="content-body pl-sm-14 pl-5">
+                <h5>
+                  Fácil de usar</h5>
+                <p class="mb-0">
+                  Integração rápida e fácil em seu ambiente. O mecanismo de recomendação é fornecido pela API para várias linguagens de programação.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-2.png" alt="">
+              </div>
+              <div class="content-body">
+                <h5>
+                  Fácil de usar</h5>
+                <p class="mb-0">
+                  Maximize sua receita e satisfação do cliente com recomendações de produtos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <!-- circle-85 start -->
+              <div class="circle-85 hover-icon">
+                <img src="./image/l4/f-icon-3.png" alt="">
+              </div>
+              <div class="content-body">
+                <h5>
+                  Fácil de usar</h5>
+                <p class="mb-0">
+                  Mostre aos seus usuários produtos complementares com base em seu comportamento de compra.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-10" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-area  d-flex ">
+              <div class="circle-85  hover-icon">
+                <img src="./image/l4/f-icon-4.png" alt="" />
+              </div>
+              <div class="content-body">
+                <h5>
+                  Fácil de usar</h5>
+                <p class="mb-0">
+                  Exiba as ofertas de produtos mais relevantes para cada usuário individual para satisfazer suas necessidades específicas e economizar tempo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing-area section -->
+    <div class="pricing-area-l14 position-relative overflow-hidden z-index-1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-6 col-lg-7 col-md-10 text-center" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+            <div class="section-heading-8">
+              <h2>
+                Preço</h2>
+              <p>Melhor preço do mercado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
+          <div class="col-md-12 text-center">
+            <!-- toggle-btn start -->
+            <div class="toggle-btn d-inline-block  justify-content-center">
+              <a class="btn-toggle btn-toggle-2 active-white d-flex  price-deck-trigger" data-pricing-trigger data-target="#table-price-value" href="javascript:">
+                <span class="round"></span>
+              </a>
+            </div>
+            <!-- toggle-btn end -->
+          </div>
+          <div class="col-md-12 col-sm-8 l-14-pricing-table row no-gutters">
+            <div class="col-lg-6 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default text-center  pt-5 pb-10 mb-lg-0" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span>Básico</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">R$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="15" data-monthly="700" data-yearly="8.400"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="Por mês" data-monthly="Por mês"
+                                data-yearly="Por ano"></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class="price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      Mais de 100.000 solicitações de recomendação</li>
+                    <li>
+                      Até 20.000 itens no catálogo</li>
+                    <li>
+                      Suporte básico ao cliente L1</li>
+                    <li>
+                      <del class="text-gray">Utilização de mais de um modelo  de ML</del>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price-btn">
+                  <a class="btn focus-reset" href="#">Entre em contato</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+            <div class="col-lg-6 col-md-6 border p-0">
+              <!-- single-price start -->
+              <div class="single-price bg-default popular-pricing popular-pricing-2 text-center position-relative  pt-5 pb-10 mb-lg-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <!-- price-top start -->
+                <div class="price-top justify-content-between mb-2">
+                  <span>Pro</span>
+                </div>
+                <!-- price-top end -->
+                <!-- main-price start -->
+                <div class="main-price pb-8 border-bottom">
+                  <div class="price mt-3 mb-3 position-relative">
+                    <span class="d-inline-block mb-0  dynamic-value">R$</span>
+                    <h2 class="d-inline-block mb-0  dynamic-value" data-active="15" data-monthly="1.000" data-yearly="10.000"></h2>
+                  </div>
+                  <span class=" dynamic-value" data-active="Por mês" data-monthly="Por mês"
+                                data-yearly="Por ano"></span>
+                </div>
+                <!-- main-price end -->
+                <!-- price-body start -->
+                <div class=" price-body">
+                  <ul class="pricing-list with-check-icon list-unstyled">
+                    <li>
+                      Mais de 2.000.000 de solicitações de recomendação</li>
+                    <li>
+                      Até 400.000 itens no catálogo</li>
+                    <li>
+                      Suporte básico ao cliente L1 e gerente de contas</li>
+                    <li>
+                      Utilização de mais de um modelo  de ML</li>
+                  </ul>
+                </div>
+                <div class="price-btn price-btn-bro">
+                  <a class="btn" href="#">Entre em contato</a>
+                </div>
+                <!-- price-btn end -->
+              </div>
+              <!-- single-price end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="m-contato"  class="row">
+      <div class="col-lg-12">
+        <div class="brand-aarea-border-l14"></div>
+      </div>
+    </div>
+    <!-- CTA Area -->
+    <div class="cta-area-l-14">
+      <div class="container position-relative">
+        <div class="bg-shape-img-3"></div>
+        <div class="row cta-area-l-14-content justify-content-center text-lg-start text-center">
+          <div class="col-lg-6">
+            <div class="cta-content">
+              <h2 class="text-white">Contato</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area -->
+    <footer class="footer-area-l-12 position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-11 pl-lg-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="row">
+              <div class="col-sm-3 col-xs-6">
+                <div class="footer-widget widget2">
+                  <p>Ajuda</p>
+                  <ul class="widget-links pl-0 list-unstyled">
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Parecerias</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                <div class="footer-widget widget3">
+                  <ul class="widget-links pl-0 list-unstyled">
+                    <li><a href="">Contato </a></li>
+                    <li><a href="">Suporte</a></li>
+                    <li><a href="">Termos e Condições</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-5 col-xs-6 pl-lg-0">
+                <div class="footer-widget widget4">
+                  <p class="widget-title">Products</p>
+                  <ul class="widget-links pl-0 list-unstyled ">
+                    <li><a href="">Suggeri</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-11" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="footer-subs-form-l-12">
+              <p>Receba nossa newsletter</p>
+              <h6>Inscreva-se para receber as últimas ofertas, notícias e anúncios de eventos.</h6>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Informe seu email" aria-label="">
+                <div class="input-group-append">
+                  <button class="btn border-0 focus-reset" type="button">
+                    <i class="icon icon-tail-right text-white"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/menu/menu.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
 
-    <script src="apoio/scripts.js"></script>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
 </html>
