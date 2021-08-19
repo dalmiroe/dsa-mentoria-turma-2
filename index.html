@@ -66,7 +66,7 @@
                       <a href="#">Envio de base de dados</a>
                     </li>
                     <li class="sub-menu--item">
-                      <a href="#">Experimente!!</a>
+                      <a href="#m-experimente">Experimente!!</a>
                     </li>
                   </ul>
                 </li>
@@ -96,7 +96,10 @@
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 pr-0 " data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
             <div class="content">
               <h1>Obtenha mais clientes</h1>
-              <p>Estamos trazendo uma ferramenta de recomendação de produto com base no que realmente os seus consumidores compram. Diga adeus às recomendações genéricas e segmentação teórica. No nosso sistema, você simplesmente carrega uma base de dados das vendas reais de sua própria empresa e automaticamente treinamos um modelo de Machine Learning especial para sua empresa. Desta forma, as recomendações de produtos serão muito mais efetivas e relevantes. Se adiquirir a versão PRO AUTO, o algoritmo melhora ainda mais a sua performance à cada clique, pesquisa de produtos e compra dos usuários no seu site. E então, vamos fazer o upgrade do seu site para incorporar Inteligência Artificial e sugerir produtos com mais possibilidade de venda para seus cliente de forma fácil e rápida?</p>
+              <p>Estamos trazendo uma ferramenta de recomendação de produto com base no que realmente os seus consumidores compram. <br><br>
+                Diga adeus às recomendações genéricas e segmentação teórica. No nosso sistema, você simplesmente carrega uma base de dados das vendas reais de sua própria empresa e automaticamente treinamos um modelo de Machine Learning especial para sua empresa. <br> <br>
+                Desta forma, as recomendações de produtos serão muito mais efetivas e relevantes. Se adquirir a versão PRO AUTO, o algoritmo melhora ainda mais a sua performance à cada clique, pesquisa de produtos e compra dos usuários no seu site. <br> <br>
+                E então, vamos fazer o upgrade do seu site para incorporar Inteligência Artificial e sugerir produtos com mais possibilidade de venda para seus clientes de forma fácil e rápida?</p>
               <!--<a href="#" class="btn focus-reset">Start my free trial</a>-->
             </div>
           </div>
@@ -154,8 +157,8 @@
               <h2>Como funciona</h2>
               <p>- O algoritmo recebe uma base de vendas e treina um algoritmo de ML.<br>
                 - Os modelos treinados para cada cliente são disponibilizados através de uma API.<br>
-                - O site dos clientes utiliza a API para consultar os produtos com mais possibilidade de venda para aquele cliente específico.<br>
-                - O site exibe a lista de produtos sugeridos pela API.</p>
+                - O site do cliente utiliza a API para consultar os produtos com mais possibilidades de venda para o usuário específico.<br>
+                - O site exibe a lista de produtos sugerida pela API.</p>
             </div>
           </div>
           <div class="offset-xl-2 col-xl-6 col-lg-6 col-md-8 pl-xl-11 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
@@ -180,12 +183,109 @@
               <h2>
                 Experimente!!!
               </h2>
-              <P>Experimente o melhor mecanismo de recomendação do planeta gratuitamente por 30 dias.</P>
+              <!--<P>Experimente o melhor mecanismo de recomendação do mercado.  Gratuitamente por 30 dias.</P> -->
+              <P>Experimente o melhor mecanismo de recomendação do mercado.</P>
+              <div>
+                <label for="prodId">Informe o produto:</label>
+                <input id="m-experimente" type="button" value="Recomendar" onclick="obterRecomendacao();" />
+              </div>
+              <table id=tbRecomendados></table>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+    <!-- Product Slider Area  -->
+    <div class="product-area-l5">
+      <div class="container">
+        <div class="border-area-l4"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8">
+            <div class="section__heading">
+              <h2>Recomendações </h2>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="l5-product-slider text-end">
+              <i class="prev5-1  fas fa-arrow-left slick-arrow slick-active"></i>
+              <i class="next5-1 fas fa-arrow-right slick-arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
+
+              <div class="single-item focus-reset">
+                <div class="product-card-l5 position-relative">
+                  <div class="image-box image-hover-style-01 overflow-hidden">
+                    <img class="w-100" src="image/product-1.png" alt="image">
+                  </div>
+                  <div class="product-content-card">
+                    <div class="content">
+                      <h4>$971,17</h4>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p>Poltrona Nogueira</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
+              <div class="single-item focus-reset">
+                <div class="product-card-l5 position-relative">
+                  <div class="image-box image-hover-style-01 overflow-hidden">
+                    <img class="w-100" src="image/product-2.png" alt="image">
+                  </div>
+                  <div class="product-content-card">
+                    <div class="content">
+                      <h4>R$520,50</h4>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p>Poltrona Opala</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
+              <div class="single-item focus-reset">
+                <div class="product-card-l5 position-relative">
+                  <div class="image-box image-hover-style-01 overflow-hidden">
+                    <img class="w-100" src="image/product-3.png" alt="image">
+                  </div>
+                  <div class="product-content-card">
+                    <div class="content">
+                      <h4>R$271,00</h4>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p>Poltrona Phonix</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Feature Area -->
     <div class="features-area-l-14">
       <div class="container bg-shape-img-2 position-relative">
@@ -197,7 +297,7 @@
               </div>
               <div class="content-body pl-sm-14 pl-5">
                 <h5>
-                  Fácil de usar</h5>
+                  Fácil de integrar</h5>
                 <p class="mb-0">
                   Integração rápida e fácil em seu ambiente. O mecanismo de recomendação é fornecido pela API para várias linguagens de programação.
                 </p>
@@ -211,7 +311,7 @@
               </div>
               <div class="content-body">
                 <h5>
-                  Fácil de usar</h5>
+                  Mais lucro</h5>
                 <p class="mb-0">
                   Maximize sua receita e satisfação do cliente com recomendações de produtos.</p>
               </div>
@@ -238,7 +338,7 @@
               </div>
               <div class="content-body">
                 <h5>
-                  Fácil de usar</h5>
+                  Ofertas relevantes</h5>
                 <p class="mb-0">
                   Exiba as ofertas de produtos mais relevantes para cada usuário individual para satisfazer suas necessidades específicas e economizar tempo.
                 </p>
@@ -428,6 +528,8 @@
   <script src="./plugins/menu/menu.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
+  <!-- arq de apoio -->
+  <script src="js/apoio.js"></script>
 </body>
 
 </html>

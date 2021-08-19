@@ -1958,7 +1958,7 @@ li.sub-menu--item.nav-item-has-children i {
   margin-bottom: 0;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Hero Area-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2156,7 +2156,7 @@ li.sub-menu--item.nav-item-has-children i {
   }
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   Brand Area-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2215,7 +2215,7 @@ li.sub-menu--item.nav-item-has-children i {
   }
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Content-area-1-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2257,7 +2257,7 @@ li.sub-menu--item.nav-item-has-children i {
   color: #0C39F8 !important;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Content-area-2-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2318,7 +2318,7 @@ li.sub-menu--item.nav-item-has-children i {
   color: #0C39F8 !important;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Feature Areea L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2393,7 +2393,7 @@ li.sub-menu--item.nav-item-has-children i {
   color: #E4E4E4;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Pricing Area-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2729,7 +2729,7 @@ li.sub-menu--item.nav-item-has-children i {
   border-radius: 5px;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    Cta Area-L-14
 
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -2818,7 +2818,7 @@ li.sub-menu--item.nav-item-has-children i {
   margin-top: 20px;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
      Footer Area L-14
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .footer-area-l-12 {
@@ -2990,7 +2990,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 /* ---------------------------------
--------> THEME CUSTOM STYLES 
+-------> THEME CUSTOM STYLES
 ---------------------------------
 */
 .background-property {
@@ -3364,3 +3364,139 @@ img.spin {
 }
 
 /*# sourceMappingURL=maps/main.css.map */
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  Product Area-L5
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+        .product-area-l5 {
+          padding-bottom: 50px;
+        }
+
+        @media (min-width: 768px) {
+          .product-area-l5 {
+            padding-bottom: 70px;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .product-area-l5 {
+            padding-bottom: 125px;
+          }
+        }
+
+        .product-area-l5 h2 {
+          font-weight: 600;
+          font-size: 34px;
+          line-height: 44px;
+          letter-spacing: -1px;
+          color: #1D263A;
+          margin-bottom: 30px;
+        }
+
+        @media (min-width: 576px) {
+          .product-area-l5 h2 {
+            font-size: 38px;
+            line-height: 48px;
+            margin-bottom: 40px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .product-area-l5 h2 {
+            font-size: 42px;
+            line-height: 50px;
+            margin-bottom: 55px;
+          }
+        }
+
+        .product-area-l5 .border-area-l4 {
+          border-bottom: 2px dashed rgba(29, 36, 58, 0.17);
+          margin: 42px 0px 53px 0px;
+        }
+
+        @media (min-width: 768px) {
+          .product-area-l5 .border-area-l4 {
+            margin: 62px 0px 73px 0px;
+          }
+        }
+
+        @media (min-width: 992px) {
+          .product-area-l5 .border-area-l4 {
+            margin: 90px 0px 100px 0px;
+          }
+        }
+
+        .l5-product-slider {
+          margin: 0px -13px 30px -13px;
+        }
+
+        @media (min-width: 768px) {
+          .l5-product-slider {
+            margin: 0px -13px 0px -13px;
+          }
+        }
+
+        .l5-product-slider i {
+          font-size: 20px;
+          color: #ddd;
+          margin: 0px 13px;
+          cursor: pointer;
+        }
+
+        .l5-product-slider .slick-active {
+          color: #1D263A;
+        }
+
+        .product-slider-l5 {
+          margin: 0px -15px;
+        }
+
+        .product-slider-l5 .single-item {
+          margin: 0px 15px;
+        }
+
+        .product-card-l5 .product-content-card {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, 100%);
+          padding-left: 30px;
+          padding-right: 30px;
+          transition: .4s;
+        }
+
+        .product-card-l5 .product-content-card .content {
+          background: #fff;
+          box-shadow: 0px 34px 50px rgba(0, 0, 0, 0.15);
+          border-radius: 10px;
+          padding: 25px 30px 25px 30px;
+        }
+
+        .product-card-l5 .product-content-card .content h4 {
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 42px;
+          letter-spacing: -1px;
+          color: #FF794D;
+          margin-bottom: 13px;
+        }
+
+        .product-card-l5 .product-content-card .content a {
+          color: #1D263A;
+        }
+
+        .product-card-l5 .product-content-card .content p {
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 22px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: #1D263A;
+          margin-bottom: 0;
+        }
+
+        .product-card-l5:hover .product-content-card {
+          transform: translate(-50%, -25%);
+        }
+
