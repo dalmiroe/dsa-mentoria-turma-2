@@ -185,19 +185,19 @@
               </h2>
               <!--<P>Experimente o melhor mecanismo de recomendação do mercado.  Gratuitamente por 30 dias.</P> -->
               <P>Experimente o melhor mecanismo de recomendação do mercado.</P>
+
               <div>
-                <label for="prodId">Informe o produto:</label>
-                <input id="m-experimente" type="button" value="Recomendar" onclick="obterRecomendacao();" />
+                <!--<label for="prodId">Informe o produto:</label>-->
+
               </div>
               <table id=tbRecomendados></table>
+              <div class="divRecomendacao"> </div>
             </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
 
 
     <!-- Product Slider Area  -->
@@ -207,30 +207,35 @@
         <div class="row align-items-center">
           <div class="col-lg-8 col-md-8">
             <div class="section__heading">
-              <h2>Recomendações </h2>
+              <h2 id="m-experimente">Recomendações </h2>
+              <input  type="button" value="Recomendar" onclick="obterRecomendacao();" />
             </div>
+            <div class="col-lg-4 col-md-4"><h2> </h2></div>
           </div>
-          <div class="col-lg-4 col-md-4">
+
+          <div class="col-lg-2 col-md-2">
             <div class="l5-product-slider text-end">
+              <!--
               <i class="prev5-1  fas fa-arrow-left slick-arrow slick-active"></i>
               <i class="next5-1 fas fa-arrow-right slick-arrow"></i>
+              -->
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-            <div class="product-slider-l5">
 
+          <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
               <div class="single-item focus-reset">
                 <div class="product-card-l5 position-relative">
                   <div class="image-box image-hover-style-01 overflow-hidden">
-                    <img class="w-100" src="image/product-1.png" alt="image">
+                    <img id="i1" class="w-100" src="image/product-1.png" alt="image">
                   </div>
                   <div class="product-content-card">
                     <div class="content">
-                      <h4>$971,17</h4>
+                      <h4 id="v1">$971,17</h4>
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <p>Poltrona Nogueira</p>
+                        <p id="p1">Poltrona Nogueira</p>
                         <a href="#"><i class="fas fa-arrow-right"></i></a>
                       </div>
                     </div>
@@ -240,18 +245,19 @@
 
             </div>
           </div>
-          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+
+          <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
             <div class="product-slider-l5">
               <div class="single-item focus-reset">
                 <div class="product-card-l5 position-relative">
                   <div class="image-box image-hover-style-01 overflow-hidden">
-                    <img class="w-100" src="image/product-2.png" alt="image">
+                    <img id="i2" class="w-100" src="image/product-2.png" alt="image">
                   </div>
                   <div class="product-content-card">
                     <div class="content">
-                      <h4>R$520,50</h4>
+                      <h4 id="v2"> R$520,50</h4>
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <p>Poltrona Opala</p>
+                        <p id="p2">Poltrona Opala</p>
                         <a href="#"><i class="fas fa-arrow-right"></i></a>
                       </div>
                     </div>
@@ -260,18 +266,19 @@
               </div>
             </div>
           </div>
-          <div class="col-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+
+          <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
             <div class="product-slider-l5">
               <div class="single-item focus-reset">
                 <div class="product-card-l5 position-relative">
                   <div class="image-box image-hover-style-01 overflow-hidden">
-                    <img class="w-100" src="image/product-3.png" alt="image">
+                    <img id="i3" class="w-100" src="image/product-3.png" alt="image">
                   </div>
                   <div class="product-content-card">
                     <div class="content">
-                      <h4>R$271,00</h4>
+                      <h4 id="v3">R$271,00</h4>
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <p>Poltrona Phonix</p>
+                        <p id="p3"> Poltrona Phonix</p>
                         <a href="#"><i class="fas fa-arrow-right"></i></a>
                       </div>
                     </div>
@@ -280,6 +287,50 @@
               </div>
             </div>
           </div>
+
+          <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
+              <div class="single-item focus-reset">
+                <div class="product-card-l5 position-relative">
+                  <div class="image-box image-hover-style-01 overflow-hidden">
+                    <img id="i5" class="w-100" src="image/product-8.png" alt="image">
+                  </div>
+                  <div class="product-content-card">
+                    <div class="content">
+                      <h4 id="v5">R$271,00</h4>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p id="p5"> Poltrona Phonix</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+            <div class="product-slider-l5">
+              <div class="single-item focus-reset">
+                <div class="product-card-l5 position-relative">
+                  <div class="image-box image-hover-style-01 overflow-hidden">
+                    <img id="i4" class="w-100" src="image/product-4.png" alt="image">
+                  </div>
+                  <div class="product-content-card">
+                    <div class="content">
+                      <h4 id="v4" >R$271,00</h4>
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <p id="p4" >Poltrona Phonix</p>
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
