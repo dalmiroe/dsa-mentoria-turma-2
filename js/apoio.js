@@ -23,7 +23,7 @@ function getNr() {
 
 
 
-function MontaListaProduto () {
+function MontaListaProduto (usuario) {
   lista = `
     <div class="pokemon-info">
         <h1 class="name">Produto 1: ${suggeri[0]}</h1>
@@ -52,11 +52,12 @@ function MontaListaProduto () {
     document.getElementById("p5").innerText = "Produto   " + suggeri[4];
     document.getElementById("v5").innerText = listaValores[getNr()];
     document.getElementById("i5").src = listaImagens[getNr()];
+    document.getElementById("rec").innerText = "Recomendações do Usuário " +usuario;
 
   return lista;
 }
 
-function obterRecomendacao(){
+function obterRecomendacao(usuario){
 
   //Obter dados da api
   fetch(urlSuggeri)
@@ -72,7 +73,7 @@ function obterRecomendacao(){
    if(suggeri.detail) {
      //informar erro
    }else{
-     divReco.innerHTML = MontaListaProduto();
+     divReco.innerHTML = MontaListaProduto(usuario);
    }
  }, 2000);
 }

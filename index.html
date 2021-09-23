@@ -186,7 +186,7 @@
               <!--<P>Experimente o melhor mecanismo de recomendação do mercado.  Gratuitamente por 30 dias.</P> -->
               <P>Experimente o melhor mecanismo de recomendação do mercado.</P>
 
-              <div>
+              <div  id="m-experimente">
                 <!--<label for="prodId">Informe o produto:</label>-->
 
               </div>
@@ -200,30 +200,51 @@
     </div>
 
 
+
+
     <!-- Product Slider Area  -->
     <div class="product-area-l5">
       <div class="container">
+        <!--
         <div class="border-area-l4"></div>
         <div class="row align-items-center">
-          <div class="col-lg-8 col-md-8">
+          <div class="col-lg-6 col-md-6">
             <div class="section__heading">
-              <h2 id="m-experimente">Recomendações </h2>
-              <input  type="button" value="Recomendar" onclick="obterRecomendacao();" />
-            </div>
-            <div class="col-lg-4 col-md-4"><h2> </h2></div>
-          </div>
-
-          <div class="col-lg-2 col-md-2">
-            <div class="l5-product-slider text-end">
-              <!--
-              <i class="prev5-1  fas fa-arrow-left slick-arrow slick-active"></i>
-              <i class="next5-1 fas fa-arrow-right slick-arrow"></i>
-              -->
+              <h2 id="m-experimente">Recomendações</h2>
             </div>
           </div>
         </div>
-        <div class="row">
+-->
+        <h2>Recomendações</h2>
+        <div class="container">
+          <div class="row feature-l1-items justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+              <div class="content h-100">
+                <img class="rosto" src="image/u1.png" alt="image">
+                <input  type="button" value="Recomendar" onclick="obterRecomendacao(1);" />
+                <h5>Usuário 1</h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+              <div class="content h-100">
+                <img class="rosto" src="image/u2.png" alt="image">
+                <input  type="button" value="Recomendar" onclick="obterRecomendacao(2);" />
+                <h5>Usuário 2</h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+              <div class="content h-100">
+                <img class="rosto" src="image/u3.png" alt="image">
+                <input  type="button" value="Recomendar" onclick="obterRecomendacao(3);" />
+                <h5>Usuário 3</h5>
+              </div>
+            </div>
+          </div>
+        </div>
 
+
+        <h8 id="rec"></h8>
+        <div class="row">
           <div class="col-2" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
             <div class="product-slider-l5">
               <div class="single-item focus-reset">
@@ -293,13 +314,13 @@
               <div class="single-item focus-reset">
                 <div class="product-card-l5 position-relative">
                   <div class="image-box image-hover-style-01 overflow-hidden">
-                    <img id="i5" class="w-100" src="image/product-8.png" alt="image">
+                    <img id="i5" class="w-100" src="image/product-4.png" alt="image">
                   </div>
                   <div class="product-content-card">
                     <div class="content">
                       <h4 id="v5">R$271,00</h4>
                       <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <p id="p5"> Poltrona Phonix</p>
+                        <p id="p5"> Note</p>
                         <a href="#"><i class="fas fa-arrow-right"></i></a>
                       </div>
                     </div>
@@ -314,7 +335,7 @@
               <div class="single-item focus-reset">
                 <div class="product-card-l5 position-relative">
                   <div class="image-box image-hover-style-01 overflow-hidden">
-                    <img id="i4" class="w-100" src="image/product-4.png" alt="image">
+                    <img id="i4" class="w-100" src="image/product-7.png" alt="image">
                   </div>
                   <div class="product-content-card">
                     <div class="content">
@@ -549,9 +570,9 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="content h-100 text-center">
-              <img class="rosto" src="image/RostoDaniela.jpg" alt="image">
+              <img class="rosto" src="image/RostoDani.jpg" alt="image">
               <p></p>
-              <h5>Daniela</h5>
+              <h5>Danielle </h5>
               <small>Cientista De Dados</small>
             </div>
           </div>
