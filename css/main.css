@@ -3500,3 +3500,7 @@ img.spin {
           transform: translate(-50%, -25%);
         }
 
+.rosto{
+  border: 1px solid rgb(216,241,36);
+  border-radius: 50%;
+}
