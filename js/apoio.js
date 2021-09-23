@@ -15,7 +15,8 @@ var listaValores = ["R$971,00","R$502", "R$58","R$888",
                     "R$45,00","R$25,00","R$15,00","78,00"
 ];
 
-const urlSuggeri = 'https://cd7jwv2auk4wzkrn.anvil.app/_/private_api/NAUJWAV2RPBGYXSGAHBTFQXI/predict_item/fca413d5/A39HTATAQ9V7YF';
+const urlSuggeri = 'https://suggeri.anvil.app/_/api/predict_item/eadb9555/A3JM6GV9MNOF9X';
+const urlSuggeri0 = 'https://cd7jwv2auk4wzkrn.anvil.app/_/private_api/NAUJWAV2RPBGYXSGAHBTFQXI/predict_item/fca413d5/A39HTATAQ9V7YF';
 
 function getNr() {
   return  Math.floor(Math.random() *  16);
