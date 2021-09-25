@@ -21,12 +21,12 @@ function getNr() {
   return  Math.floor(Math.random() *  16);
 }
 
-function MontaListaProduto (usuario) {
+function MontaListaProduto (usuario,i) {
   lista = '';
 
     document.getElementById("p1").innerText = "Produto   " + suggeri[0];
-    document.getElementById("v1").innerText = listaValores[getNr()];
-    document.getElementById("i1").src = listaImagens[getNr()];
+    document.getElementById("v1").innerText = listaValores[i] ;//listaValores[getNr()];
+    document.getElementById("i1").src = listaImagens[i];// listaImagens[getNr()];
 
     document.getElementById("p2").innerText = "Produto   " + suggeri[1];
     document.getElementById("v2").innerText = listaValores[getNr()];
@@ -48,7 +48,7 @@ function MontaListaProduto (usuario) {
   return lista;
 }
 
-function obterRecomendacao(usuario){
+function obterRecomendacao(usuario,i){
 
   //Obter dados da api
   fetch(urlSuggeri + usuario)
@@ -66,7 +66,7 @@ function obterRecomendacao(usuario){
      console.log("suggeri está nulo");
    }else{
      //divReco.innerHTML = MontaListaProduto(usuario);
-     MontaListaProduto(usuario);
+     MontaListaProduto(usuario,i);
    }
  }, 2000);
 }
