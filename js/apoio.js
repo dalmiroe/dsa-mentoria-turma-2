@@ -8,10 +8,9 @@ var listaImagens = ["image/product-1.png","image/product-2.png","image/product-3
                     "image/product-13.png","image/product-14.png","image/product-15.png","image/product-16.png"
                   ];
 
-var listaValores = ["R$971","R$502", "R$58","R$888",
-                    "R$702", "R$158","R$742","R$202",
-                    "R$602","R$100","R$200","R$200",
-                    "R$45","R$25","R$15","R$78"
+var listaValores = ["R$971","R$502", "R$58","R$888","R$702",
+                    "R$158","R$742","R$202","R$602","R$100",
+                    "R$200","R$200","R$45","R$25","R$15","R$78"
 ];
 
 const urlSuggeri0 = 'https://suggeri.anvil.app/_/api/predict_item/eadb9555/A3JM6GV9MNOF9X';
@@ -23,10 +22,9 @@ function getNr() {
 
 function MontaListaProduto (usuario,i) {
   lista = '';
-
     document.getElementById("p1").innerText = "Produto   " + suggeri[0];
-    document.getElementById("v1").innerText = listaValores[i] ;//listaValores[getNr()];
-    document.getElementById("i1").src = listaImagens[i];// listaImagens[getNr()];
+    document.getElementById("v1").innerText = listaValores[getNr()];
+    document.getElementById("i1").src = listaImagens[getNr()];
 
     document.getElementById("p2").innerText = "Produto   " + suggeri[1];
     document.getElementById("v2").innerText = listaValores[getNr()];
@@ -48,6 +46,28 @@ function MontaListaProduto (usuario,i) {
   return lista;
 }
 
+function MontaListaProduto2 (usuario,i){
+  var a;
+  var b=1;
+  if (i==1) {
+    a=0;
+  }
+  else if (i==2){
+    a=5;
+  } else {
+    a=10;
+  }
+  for(var ind=0;ind<5;ind++){
+    document.getElementById("p"+b).innerText = "Produto   " + suggeri[ind];
+    document.getElementById("v"+b).innerText = listaValores[a];
+    document.getElementById("i"+b).src = listaImagens[a];
+    a++;
+    b++;
+  }
+  document.getElementById("rec").innerText = "Recomendações do Usuário " +i;
+}
+
+
 function obterRecomendacao(usuario,i){
 
   //Obter dados da api
@@ -66,7 +86,7 @@ function obterRecomendacao(usuario,i){
      console.log("suggeri está nulo");
    }else{
      //divReco.innerHTML = MontaListaProduto(usuario);
-     MontaListaProduto(usuario,i);
+     MontaListaProduto2(usuario,i);
    }
  }, 2000);
 }
