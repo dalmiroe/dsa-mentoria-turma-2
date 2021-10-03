@@ -3077,7 +3077,7 @@ a {
   top: 0%;
   left: 0%;
   border-radius: 20px;
-  background: #213053;
+  background: #14ee80;
   transition: all .5s;
   opacity: 0;
   z-index: -1;
@@ -3474,8 +3474,8 @@ img.spin {
         }
 
         .product-card-l5 .product-content-card .content h4 {
-          font-weight: 600;
-          font-size: 32px;
+          font-weight: 400;
+          font-size: 25px;
           line-height: 42px;
           letter-spacing: -1px;
           color: #FF794D;
@@ -3488,7 +3488,7 @@ img.spin {
 
         .product-card-l5 .product-content-card .content p {
           font-weight: 600;
-          font-size: 13px;
+          font-size: 10px;
           line-height: 22px;
           letter-spacing: 4px;
           text-transform: uppercase;

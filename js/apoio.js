@@ -2,8 +2,8 @@ var suggeri;
 //var divReco = document.querySelector('.divRecomendacao');
 
 
-var listaImagens = ["image/product-1.png","image/product-2.png","image/product-3.png", "image/product-4.png",
-                    "image/product-5.png","image/product-6.png", "image/product-7.png","image/product-8.png",
+var listaImagens = ["image/product-5.png","image/product-6.png","image/product-7.png", "image/product-8.png",
+                    "image/product-1.png","image/product-2.png", "image/product-3.png","image/product-4.png",
                     "image/product-9.png","image/product-10.png","image/product-11.png","image/product-12.png",
                     "image/product-13.png","image/product-14.png","image/product-15.png","image/product-16.png"
                   ];
@@ -70,6 +70,26 @@ function MontaListaProduto2 (usuario,i){
 
 
 function obterRecomendacao(usuario,i){
+  document.getElementsByTagName('input')[i-1].value = 'processando..';
+  //Obter dados da api
+  fetch(urlSuggeri + usuario)
+    .then(response => response.json())
+    .then(data => {
+      suggeri = data;
+     console.log(suggeri);
+     if(suggeri == null) {
+       //informar erro
+       console.log("suggeri está nulo");
+     }else{
+       //divReco.innerHTML = MontaListaProduto(usuario);
+       MontaListaProduto2(usuario,i);
+     }
+     document.getElementsByTagName('input')[i-1].value = 'sugerir';
+    })
+    .catch(err => console.log(err));
+}
+
+function obterRecomendacao1(usuario,i){
 
   //Obter dados da api
   fetch(urlSuggeri + usuario)
